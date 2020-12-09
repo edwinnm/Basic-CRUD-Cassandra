@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/api/groceries
+
+
+####
+POST http://localhost:3000/api/groceries
+Content-Type: application/json
+
+{
+    "id": "m1",
+    "name": "mandarina",
+    "price": "0.25"
+}
+
+###
+GET http://localhost:3000/api/groceries/m1
+
+###
+PUT http://localhost:3000/api/groceries/m1
+Content-Type: application/json
+
+{
+    "id": "m1",
+    "name": "mandarinass",
+    "price": "0.25"
+    
+}
+###
+DELETE  http://localhost:3000/api/groceries/m1
